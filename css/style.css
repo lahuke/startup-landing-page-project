@@ -55,6 +55,9 @@ ol, ul {
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 .top-navigation > .content {
     margin: 0 auto;
@@ -96,16 +99,16 @@ ol, ul {
     background-height: 600px;
     text-align: center;
     overflow: auto;
-  
+}
+.content{
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
 }
 .content-h3{
     margin-top: 1.25rem;
     font-size: 1.563rem;
 }
-.content {
-    margin-top: 17.5rem;
-    font-size: 3.125rem;
-}
+
 .big-button {
     text-shadow: none;
     border-style: none;
@@ -120,5 +123,40 @@ ol, ul {
     text-shadow: none;
     color: white;
     font-size: 1.125rem;
+}
 
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+    font-color: black;
+}
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+
+.cases .devices {
+    width: 25%;
+    display: inline-block;
+}
+.devices {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
 }
